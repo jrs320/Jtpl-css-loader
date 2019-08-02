@@ -1,0 +1,17 @@
+{
+  "name": "jtpl-css-loader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "jtpl-css-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "loader",
+    "jtpl",
+    "jtpl-css-loader"
+  ],
+  "author": "jrs",
+  "license": "ISC"
+}
