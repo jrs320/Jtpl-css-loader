@@ -16,7 +16,10 @@ module.exports = function(source) {
     let reg = /([^\}]+?)(\s*\{)/g
     source = source.replace(reg, ($0, $1, $2) => {
       let cls = $1.replace(/\/\*.*\*\//g, '')
-      if (/@media|@keyframes/.test(cls) 
+      if (/\/deep\//.test(cls)) {
+        return $0.replace(/\/deep\//g, '')
+      }
+      if (/@media|@keyframes/.test(cls)
         || /from|to|:before|:after\d+%\s*\{$/.test($0)) {
         return $0
       }
